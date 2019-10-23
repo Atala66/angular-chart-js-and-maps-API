@@ -20,7 +20,13 @@ export class FitnessProgressComponent implements OnInit {
 
   public configBarChart(): BarChartConfig {
     return  {
-      currentMonth: 'SEPTIEMBRE'
+      currentMonth: 'SEPTIEMBRE',
+      barChartLabels: ['Semana 1', 'Semana 2', 'Semana 3', 'Semana 4'],
+      barChartType: 'bar',
+      barChartData: [
+        { data: [65, 59, 80, 81, 56, 55, 40], label: 'Musculación' },
+        { data: [28, 48, 40, 19, 86, 27, 90], label: 'Cardio' }
+      ]
     };
   }
 
